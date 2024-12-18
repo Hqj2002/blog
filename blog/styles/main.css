@@ -1,0 +1,144 @@
+/* 重置样式 */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置背景图 */
+body {
+    background-image: url('flower.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    color: #8d2525;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+nav {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #270935;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* 主内容区域样式 */
+main {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* 轮播图样式 */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-prev, .carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* 联系方式容器样式 */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-icon {
+    width: 400px; /* 根据需要调整图标大小 */
+    margin: 20px; /* 图标之间的间距 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    transition: transform 0.2s; /* 点击时的缩放效果 */
+}
+
+.contact-icon:hover {
+    transform: scale(1.1); /* 鼠标悬停时图标放大 */
+}
+.form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="email"], input[type="password"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

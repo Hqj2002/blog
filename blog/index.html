@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="resume.html">我的简历</a></li>
+                <li><a href="contact.html">联系方式</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="carousel-item active"><img src="styles/image1.jpg" alt="Image 1"></div>
+            <div class="carousel-item"><img src="styles/image2.jpg" alt="Image 2"></div>
+            <div class="carousel-item"><img src="styles/image3.jpg" alt="Image 3"></div>
+            <div class="carousel-item"><img src="styles/image4.jpg" alt="Image 4"></div>
+            <div class="carousel-item"><img src="styles/image5.jpg" alt="Image 5"></div>
+            <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
